@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="11.785">
+    <testcase classname="Search Item" name="Search for item and verify results text" time="4.986">
+        <system-out>
+            <![CDATA[Given User is on google HomePage............................................passed
+Given I want to search for "iphone".........................................passed
+And results text is displayed with "About"..................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Search Item" name="Title of your scenario outline" time="2.202">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given User is on google HomePage............................................passed
+Given I want to search for "iphone".........................................passed
+And results item consist of" iphone"........................................undefined
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Search Item" name="Title of your scenario outline 2" time="1.716">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given User is on google HomePage............................................passed
+Given I want to search for "macbookpro".....................................passed
+And results item consist of" macbook".......................................undefined
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Search Item" name="Title of your scenario outline 3" time="2.671">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given User is on google HomePage............................................passed
+Given I want to search for "samsung"........................................passed
+And results item consist of" Samsung".......................................undefined
+]]>
+        </failure>
+    </testcase>
+</testsuite>
